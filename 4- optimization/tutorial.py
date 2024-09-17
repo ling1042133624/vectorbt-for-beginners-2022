@@ -50,7 +50,7 @@ for window in rsi_windows:
     res = ind.run(
             btc_price,
             rsi_window = window,
-            entry = entry,
+            # entry = entry,
             exit = np.arange(60,85,step=1,dtype=int),
             param_product = True
             )

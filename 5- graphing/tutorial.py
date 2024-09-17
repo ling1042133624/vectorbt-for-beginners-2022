@@ -81,12 +81,12 @@ fig.add_hline( y= 38000,
                 col = 2,
                 line_width=20)
 
-"""
+
 fig = btc_price.vbt.plot(trace_kwargs=dict(name='Price',line=dict(color='red')))
 fig = fast_ma.ma.vbt.plot(trace_kwargs=dict(name='Fast_ma',line=dict(color='blue')), fig=fig)
 fig = slow_ma.ma.vbt.plot(trace_kwargs=dict(name='Slow_ma',line=dict(color='green')), fig=fig)
-fig = entries.vbt.signals.plot_as_entry_markers(btc_price, fig=fig)
-fig = exits.vbt.signals.plot_as_exit_markers(btc_price, fig=fig)
-"""
+# fig = entries.vbt.signals.plot_as_entry_markers(btc_price, fig=fig)
+# fig = exits.vbt.signals.plot_as_exit_markers(btc_price, fig=fig)
+
 
 fig.show()
