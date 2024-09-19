@@ -20,6 +20,6 @@ exits = rsi.rsi_crossed_above(70)
 
 pf = vbt.Portfolio.from_signals(btc_price, entries, exits)
 
-pf.plot()
+# pf.plot() # 只有在单参数时，plot()方法才能正常显示
 
-# print(pf.total_return())
+print(pf.total_return())
