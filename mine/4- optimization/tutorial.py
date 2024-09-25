@@ -4,6 +4,7 @@ import numpy as np
 import datetime
 import talib
 from numba import njit
+from vectorbt.base.reshape_fns import to_2d
 
 end_time = datetime.datetime.now()
 start_time = end_time - datetime.timedelta(days=2)
@@ -39,6 +40,7 @@ ind = vbt.IndicatorFactory(
                 rsi_window = 14,
                 entry = 30,
                 exit = 70,
+                # to_2d=False,
                 )
 
 rsi_windows = np.arange(10,40,step=1,dtype=int)
